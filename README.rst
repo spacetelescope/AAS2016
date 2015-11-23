@@ -1,7 +1,7 @@
 Using Python for Astronomical Data Analysis
 -------------------------------------------
 
-| 227th AAS Meeting
+| `227th AAS Meeting <http://aas.org/meetings/aas227>`_
 | Monday, 4 January 2016
 | 9:00am - 12:00pm, 1:30pm - 4:30pm
 | Room: St. George 114
