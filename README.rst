@@ -6,6 +6,8 @@ Using Python for Astronomical Data Analysis
 | 9:00am - 12:00pm, 1:30pm - 4:30pm
 | Room: St. George 114
 | Fee: $35
+| Instructors:  Larry Bradley, Nadia Dencheva, Tim Pickering, and Erik Tollerud
+| Speaker:  Jason Kalirai
 |
 
 This workshop will cover the use of Python tools to analyze
@@ -36,3 +38,39 @@ participate in the exercises. Those without Python experience will
 still get much useful information about the capabilities for data
 analysis in Python. Experience with Python scientific libraries,
 particularly numpy and matplotlib, is helpful, but not required.
+
+
+Schedule
+--------
+
++------------------+-------------------------------------------------+
+|     Time         |   Topic                                         |
++==================+=================================================+
+| 8:00 - 9:00 am   | Installation help                               |
++------------------+-------------------------------------------------+
+| 9:00 - 9:15 am   | Astropy Overview (Erik T; 15 min)               |
++------------------+-------------------------------------------------+
+| 9:15 - 10:00 am  | Numpy Intro, Units (Larry; 45 min)              |
++------------------+-------------------------------------------------+
+| 10:00 - 10:30 am | Tables, FITS, ASCII tables Part 1 (Tim; 30 min) |
++------------------+-------------------------------------------------+
+| 10:30 - 10:45 am | Break (15 min)                                  |
++------------------+-------------------------------------------------+
+| 10:45 - 11:15 am | Tables, FITS, ASCII tables Part 2 (Tim; 30 min) |
++------------------+-------------------------------------------------+
+| 11:15 am - 12 pm | Coordinates (Erik T; 45 min)                    |
++------------------+-------------------------------------------------+
+| 12:00 - 1:30 pm  | Lunch                                           |
++------------------+-------------------------------------------------+
+| 1:30 - 1:45 pm   | Cosmology (Erik T; 15 min)                      |
++------------------+-------------------------------------------------+
+| 1:45 - 2:40 pm   | Modeling, Fitting, WCS (Nadia; 55 min)          |
++------------------+-------------------------------------------------+
+| 2:40 - 3:00 pm   | JWST: Preparing for Cycle 1 (Jason; 20 min)     |
++------------------+-------------------------------------------------+
+| 3:00 - 3:15 pm   | Break (15 min)                                  |
++------------------+-------------------------------------------------+
+| 3:15 - 4:00 pm   | Photutils (Larry; 45 min)                       |
++------------------+-------------------------------------------------+
+| 4:00 - 4:30 pm   | GUI (Glue, imexam, specview) (Tim; 30 min)      |
++------------------+-------------------------------------------------+
