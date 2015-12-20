@@ -1,5 +1,5 @@
 Using Python for Astronomical Data Analysis
--------------------------------------------
+===========================================
 
 | `227th AAS Meeting <http://aas.org/meetings/aas227>`_
 | Monday, 4 January 2016
@@ -38,6 +38,25 @@ participate in the exercises. Those without Python experience will
 still get much useful information about the capabilities for data
 analysis in Python. Experience with Python scientific libraries,
 particularly numpy and matplotlib, is helpful, but not required.
+
+
+Installation Requirements
+-------------------------
+
+To follow along with the tutorials and to do the exercises, you will
+need to have the following packages installed:
+
+* Python 2.6 (>= 2.6.5), 2.7, or >= 3.3
+* IPython (>= 4.0) and Jupyter Notebook (>= 1.0)
+* Numpy >= 1.6
+* Scipy >= 0.15
+* matplotlib >= 1.3
+* Astropy 1.1
+* Photutils 0.2 (to be released the week of 12/28/2015)
+* scikit-image >= 0.11
+* pandas
+* Glue
+* imexam
 
 
 Schedule
