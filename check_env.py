@@ -54,6 +54,12 @@ except ImportError as err:
     print('Error: Failed import: {0}'.format(err))
     errors = True
 
+try:
+    import pandas
+except ImportError as err:
+    print('Error: Failed import: {0}'.format(err))
+    errors = True
+
 # BeautifulSoup4 for one bit of the ASCII tables section.
 try:
     import bs4
