@@ -58,6 +58,11 @@ need to have the following packages installed:
 * Glue
 * imexam
 
+You can run the ``check_env.py`` script to check your Python
+environment for the required dependencies::
+
+  % python check_env.py
+
 
 Schedule
 --------
