@@ -52,7 +52,7 @@ need to have the following packages installed:
 * Scipy >= 0.15
 * matplotlib >= 1.3
 * Astropy 1.1
-* Photutils 0.2 (to be released the week of 12/28/2015)
+* Photutils 0.2
 * scikit-image >= 0.11
 * pandas
 * Glue
