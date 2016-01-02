@@ -50,6 +50,8 @@ need to have the following packages installed:
 * IPython (>= 4.0) and Jupyter Notebook (>= 1.0)
 * Numpy >= 1.6
 * Scipy >= 0.15
+* Pandas >= 0.17
+* xlwt >= 1.0
 * matplotlib >= 1.3
 * Astropy 1.1
 * Photutils 0.2

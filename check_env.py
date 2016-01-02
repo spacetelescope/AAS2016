@@ -39,6 +39,7 @@ pkgs = {'IPython': 4.0,
         'photutils': 0.2,
         'skimage': 0.11,
         'pandas': 0.17.1,
+        'xlwt': 1.0.0,
         'glue': None,
         }
 
