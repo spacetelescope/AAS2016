@@ -38,7 +38,7 @@ pkgs = {'IPython': 4.0,
         'astropy': 1.1,
         'photutils': 0.2,
         'skimage': 0.11,
-        'pandas': None,
+        'pandas': 0.17.1,
         'glue': None,
         }
 
