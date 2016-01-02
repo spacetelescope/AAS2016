@@ -52,11 +52,16 @@ need to have the following packages installed:
 * Scipy >= 0.15
 * matplotlib >= 1.3
 * Astropy 1.1
-* Photutils 0.2 (to be released the week of 12/28/2015)
+* Photutils 0.2
 * scikit-image >= 0.11
 * pandas
 * Glue
 * imexam
+
+You can run the ``check_env.py`` script to check your Python
+environment for the required dependencies::
+
+  % python check_env.py
 
 
 Schedule

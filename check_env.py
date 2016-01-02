@@ -1,79 +1,52 @@
+#!/usr/bin/env python
 """
-Check for required and optional dependencies for the 2016 AAS Astropy
-tutorial.
-
-- astropy: 1.0.6 or later required
-- numpy: required (version depends on astropy version)
-- scipy: required
-- matplotlib: required
-- photutils: required
-- bs4 (BeautifulSoup): optional
+Check for required dependencies for the 2016 AAS "Using Python for
+Astronomical Data Analysis" workshop.
 
 Usage::
 
   % python check_env.py
 """
 
-warnings = False
-errors = False
+from distutils.version import LooseVersion
 
-try:
-    import astropy
-except ImportError as err:
-    print('Error: Failed import: {0}'.format(err))
-    errors = True
-else:
-    # Astropy version 1.0.6
-    astropy_version = astropy.__version__
-    if astropy_version < '1.0.6':
-        print('Error: astropy version 1.0.6 or later is required, you have {0}'
-              .format(astropy.__version__))
+
+def check_package(package_name, minimum_version=None):
+    errors = False
+    try:
+        pkg = __import__(package_name)
+    except ImportError as err:
+        print('Error: Failed import: {0}'.format(err))
         errors = True
+    else:
+        if minimum_version is not None:
+            installed_version = pkg.__version__
+            if (LooseVersion(installed_version) <
+                    LooseVersion(str(minimum_version))):
+                print('Error: {0} version {1} or later is required, you '
+                      'have version {2}'.format(package_name, minimum_version,
+                                                installed_version))
+                errors = True
+    return errors
 
-try:
-    import numpy
-except ImportError as err:
-    print('Error: Failed import: {0}'.format(err))
-    errors = True
 
-try:
-    import scipy
-except ImportError as err:
-    print('Error: Failed import: {0}'.format(err))
-    errors = True
+pkgs = {'IPython': 4.0,
+        'jupyter': 1.0,
+        'numpy': 1.6,
+        'scipy': 0.15,
+        'matplotlib': 1.3,
+        'astropy': 1.1,
+        'photutils': 0.2,
+        'skimage': 0.11,
+        'pandas': 0.17.1,
+        'glue': None,
+        }
 
-try:
-    import matplotlib
-except ImportError as err:
-    print('Error: Failed import: {0}'.format(err))
-    errors = True
-
-try:
-    import photutils
-except ImportError as err:
-    print('Error: Failed import: {0}'.format(err))
-    errors = True
-
-try:
-    import pandas
-except ImportError as err:
-    print('Error: Failed import: {0}'.format(err))
-    errors = True
-
-# BeautifulSoup4 for one bit of the ASCII tables section.
-try:
-    import bs4
-except ImportError:
-    print('Warning: BeautifulSoup4 is not installed, so you will not be '
-          'able to run the example for reading HTML tables.')
-    warnings = True
-
-print('\nAstropy tutorial environment check summary:')
-if errors:
-    print('  There are errors that you must resolve before running the '
-          'tutorial.')
-if warnings:
-    print('  There are warnings and some parts of the tutorial will not '
-          'work.')
-if not errors and not warnings:
-    print('  Your Python environment is good to go!')
+errors = []
+for package_name, min_version in pkgs.items():
+    errors.append(check_package(package_name, minimum_version=min_version))
+if any(errors):
+    print('\nThere are errors that you must resolve before running the '
+          'tutorials.')
+else:
+    print('\nYour Python environment is good to go!')
