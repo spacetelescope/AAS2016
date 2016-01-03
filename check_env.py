@@ -30,16 +30,16 @@ def check_package(package_name, minimum_version=None):
     return errors
 
 
-pkgs = {'IPython': 4.0,
-        'jupyter': 1.0,
-        'numpy': 1.6,
-        'scipy': 0.15,
-        'matplotlib': 1.3,
-        'astropy': 1.1,
-        'photutils': 0.2,
-        'skimage': 0.11,
-        'pandas': 0.17.1,
-        'xlwt': 1.0.0,
+pkgs = {'IPython': '4.0',
+        'jupyter': '1.0',
+        'numpy': '1.6',
+        'scipy': '0.15',
+        'matplotlib': '1.3',
+        'astropy': '1.1',
+        'photutils': '0.2',
+        'skimage': '0.11',
+        'pandas': '0.17.1',
+        'xlwt': '1.0.0',
         'glue': None,
         }
 
