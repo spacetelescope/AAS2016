@@ -56,7 +56,6 @@ need to have the following packages installed:
 * Astropy 1.1
 * Photutils 0.2
 * scikit-image >= 0.11
-* pandas
 * Glue
 * imexam
 
