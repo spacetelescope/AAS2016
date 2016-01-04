@@ -72,9 +72,9 @@ Some quirks you might run into:
 * If you're using anaconda or miniconda, you should use the astropy channel for conda to install
 photutils and astroquery:
 
-```
+``
 conda install -c http://conda.anaconda.org/astropy photutils astroquery
-```
+``
 
 Schedule
 --------
