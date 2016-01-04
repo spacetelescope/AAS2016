@@ -59,12 +59,21 @@ need to have the following packages installed:
 * astroquery >= 0.3.0 (not strictly needed, but makes the coordinates tutorial more straightforward)
 * Glue
 * imexam
+* astroquery
 
 You can run the ``check_env.py`` script to check your Python
 environment for the required dependencies::
 
   % python check_env.py
 
+Some quirks you might run into:
+* 'glue' is installed as 'glueviz' (e.g. conda install glueviz)
+* 'skimage' is 'scikit-image' (e.g. conda install scikit-image)
+* If you're using anaconda or miniconda, you should use the astropy channel for conda to install
+photutils and astroquery:
+```
+conda install -c http://conda.anaconda.org/astropy photutils astroquery
+```
 
 Schedule
 --------
@@ -105,4 +114,4 @@ Schedule
 
 AAS Survey
 ----------
-If you participated in the workshop, the AAS asks that you please fill out the survey at http://bit.ly/aas227profdev 
+If you participated in the workshop, the AAS asks that you please fill out the survey at http://bit.ly/aas227profdev
