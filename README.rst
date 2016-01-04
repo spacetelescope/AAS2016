@@ -67,10 +67,11 @@ environment for the required dependencies::
   % python check_env.py
 
 Some quirks you might run into:
-* 'glue' is installed as 'glueviz' (e.g. conda install glueviz)
-* 'skimage' is 'scikit-image' (e.g. conda install scikit-image)
+* `glue` is installed as `glueviz` (e.g. conda install glueviz)
+* `skimage` is `scikit-image` (e.g. conda install scikit-image)
 * If you're using anaconda or miniconda, you should use the astropy channel for conda to install
 photutils and astroquery:
+
 ```
 conda install -c http://conda.anaconda.org/astropy photutils astroquery
 ```
