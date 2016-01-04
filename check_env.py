@@ -43,6 +43,7 @@ pkgs = {'IPython': '4.0',
         'skimage': '0.11',
         'pandas': '0.17.1',
         'xlwt': '1.0.0',
+        'astroquery': '0.3.0',
         'glue': None,
         }
 

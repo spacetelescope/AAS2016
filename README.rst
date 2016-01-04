@@ -56,6 +56,7 @@ need to have the following packages installed:
 * Astropy 1.1
 * Photutils 0.2
 * scikit-image >= 0.11
+* astroquery >= 0.3.0 (not strictly needed, but makes the coordinates tutorial more straightforward)
 * Glue
 * imexam
 
@@ -101,3 +102,7 @@ Schedule
 +------------------+-------------------------------------------------+
 | 4:00 - 4:30 pm   | GUI (Glue, imexam, specview) (Tim; 30 min)      |
 +------------------+-------------------------------------------------+
+
+AAS Survey
+----------
+If you participated in the workshop, the AAS asks that you please fill out the survey at http://bit.ly/aas227profdev 
