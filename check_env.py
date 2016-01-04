@@ -20,7 +20,10 @@ def check_package(package_name, minimum_version=None):
         errors = True
     else:
         if minimum_version is not None:
-            installed_version = pkg.__version__
+            if package_name == 'xlwt':
+                installed_version = pkg.__VERSION__
+            else:
+                installed_version = pkg.__version__
             if (LooseVersion(installed_version) <
                     LooseVersion(str(minimum_version))):
                 print('Error: {0} version {1} or later is required, you '
