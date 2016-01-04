@@ -56,6 +56,7 @@ need to have the following packages installed:
 * Astropy 1.1
 * Photutils 0.2
 * scikit-image >= 0.11
+* astroquery >= 0.3.0 (not strictly needed, but makes the coordinates tutorial more straightforward)
 * Glue
 * imexam
 
@@ -104,4 +105,4 @@ Schedule
 
 AAS Survey
 ----------
-If you participated in the workshop, the AAS asks that you please fill out the survey http://bit.ly/aas227profdev 
+If you participated in the workshop, the AAS asks that you please fill out the survey at http://bit.ly/aas227profdev 
